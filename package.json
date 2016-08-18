@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "serve .",
+    "pkginstall": "npm install",
+    "postinstall": "jspm install",
     "test": "karma start",
-    "postinstall": "jspm install"
+    "serve": "serve ."
   },
   "author": "",
   "license": "ISC",

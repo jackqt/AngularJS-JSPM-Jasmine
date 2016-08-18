@@ -16,7 +16,10 @@ module.exports = function (config) {
       config: 'config.js',
       loadFiles: ['app/**/*-spec.js'],
       serveFiles: ['app/**/*!(-spec).js'],
-      packages: 'jspm_packages'
+      packages: 'jspm_packages',
+      meta: {
+        'app/*': {format: 'register'}
+      }
     },
 
     proxies: {
@@ -27,10 +30,15 @@ module.exports = function (config) {
     browsers: ['PhantomJS'],
 
     preprocessors: {
-      'app/**/*-spec.js': ['babel', 'sourcemap', 'coverage']
+      'app/**/*!(-spec).js': ['babel', 'sourcemap', 'coverage']
     },
 
-    reporters: ['progress'],
+    reporters: ['progress', 'coverage'],
+
+    coverageReporter: {
+      type : 'html',
+      dir : 'coverage/'
+    },
 
     plugins: [
       'karma-babel-preprocessor',

@@ -1,6 +1,8 @@
-language: javascript
+language: node_js
+node_js:
+  - "0.12"
 install:
   - npm run pkginstall
   - npm run postinstall
-test:
+script:
   - npm run test

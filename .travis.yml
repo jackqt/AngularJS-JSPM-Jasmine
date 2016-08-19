@@ -1,6 +1,13 @@
 language: node_js
 node_js:
   - "0.12"
+env:
+  global:
+  - secure: [lyLiLD5gkrg18UGIXXFrNXAu6N5nvKSkX5DvUgw+FhyAhsZriytMK6VvrMwJJ1OloJ2zxAxYCOynQ6j/MjC00V/XCTCkKrdY2YqzeFNpWY2l4b6zX8KePD0swTCo0aoJN37jSvUMc5PsTmHaUVbbiORFsG9PLCIQ3R8BHbi7QLgABbB4zYUY8d4ZbjjLi0apY+vBSIl1oOHZngpXNLI1/VNxv6+vsMw774ZalIKyznEfHpB9SHY3DdkieiC2Q+brWW9II+xF1mej3obCnrk1LyIOEZasTqDcTK72Ys62HdbFdI0uCROpz3C5ze7LpEgOmUoqIlQKj9orWhSipdGgtgpjstptQLrt+E7U0jaDg7NlzaFlyLt+6M1DM9+U9Axuj71SuswsokFBINrHirmTk1NAoTCXRGLSJyIQHgmb8kqocV2gck11bPibq4itOxDms9i4zOUN0DDZhle6rpVWt2TcuHgRKcj3ZfOsPLFI6gDUhIAC8GCqs4Cnqt9IybcyzSquV+Li7gEnyl6dMWCv/kUc3mAoKmhDrVO739drnWvY53KByIN+RscaAiCvmn72SO8zbUgBEVMYKybcCqhhU1obH7YMtxYDm4EzB9rbSqssg/iGglhWEhNHR59/DUnwk7jP0m/5PsaRWXeS59kB2rzfUTlTowliNx1I+5gLLF0=]
+
+before_install:
+  - npm install -g jspm
+  - jspm config registries.github.auth $JSPM_GITHUB_AUTH_TOKEN
 install:
   - npm run pkginstall
   - npm run postinstall

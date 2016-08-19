@@ -1,4 +1,4 @@
-import 'fetch';
+import 'node-fetch';
 
 class Request {
 

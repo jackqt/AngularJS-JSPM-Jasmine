@@ -18,7 +18,6 @@ System.config({
     "babel": "npm:babel-core@5.8.38",
     "babel-runtime": "npm:babel-runtime@5.8.38",
     "core-js": "npm:core-js@1.2.7",
-    "fetch": "github:github/fetch@1.0.0",
     "react": "npm:react@15.3.0",
     "react-dom": "npm:react-dom@15.3.0",
     "github:jspm/nodelibs-assert@0.1.0": {

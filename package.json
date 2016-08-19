@@ -1,16 +1,20 @@
 {
-  "name": "angulartest",
+  "name": "AngularJSWithJSPM",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com:jackqt/AngularJS-JSPM-Jasmine.git"
+  },
   "scripts": {
     "pkginstall": "npm install",
     "postinstall": "jspm install",
     "test": "karma start",
     "serve": "serve ."
   },
-  "author": "",
-  "license": "ISC",
+  "author": "jackqt",
+  "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.13.2",
     "babel-plugin-transform-es2015-modules-systemjs": "^6.12.0",
@@ -47,3 +51,4 @@
     }
   }
 }
+

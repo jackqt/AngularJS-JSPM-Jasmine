@@ -7,7 +7,7 @@ env:
 
 before_install:
   - npm install -g jspm
-  - jspm config registries.github.auth $JSPM_GITHUB_AUTH_TOKEN
+  - jspm config registries.github.auth "353103591cfafe53c98713fc7640e80b1eb39bdb"
 install:
   - npm run pkginstall
   - npm run postinstall

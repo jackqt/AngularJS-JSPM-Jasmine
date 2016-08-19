@@ -9,7 +9,7 @@
   },
   "scripts": {
     "pkginstall": "npm install",
-    "postinstall": "jspm install",
+    "postinstall": "jspm install -y",
     "test": "karma start",
     "serve": "serve ."
   },
